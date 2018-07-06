@@ -1,5 +1,6 @@
 class Show < ActiveRecord::Base
-  def create(options={})
+  def self.highest_rating
+    self.maximum(rating)
   end
 
 end
